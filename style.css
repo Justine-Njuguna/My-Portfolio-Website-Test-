@@ -1,0 +1,136 @@
+/* Default styles for the body element */
+body {
+    margin: 8px;
+    background-color: #fff;
+    color: #000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Default styles for all elements */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* This is the Styling the navbar */
+  nav {
+    background-color: #6622a5;
+    height: 70px;
+    display: flex;
+    align-items: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+  }
+  
+  li {
+    margin: 0 20px;
+  }
+  
+  
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 20px;
+    position: relative;
+    font-weight: bold;
+  }
+
+  a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-out;
+}
+
+a:hover::before {
+  transform: scaleX(1);
+}
+/*So now let us style the logo*/
+.logo {
+    font-family: 'Fira Code', monospace;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+  }
+  
+  .logo:hover {
+    color: #fffb00;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .logo {
+      font-size: 18px;
+    }
+  }
+
+/*Let us edit the hamburger nav button*/
+.menu-btn {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hamburger {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: white;
+    margin: 5px auto;
+    justify-content: flex-end;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu-btn {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      background-color: #622f9c;
+    }
+  
+    .nav-links li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .nav-links a {
+      color: white;
+      font-size: 18px;
+      padding: 10px;
+    }
+  
+    .nav-links a:hover {
+      background-color: #8c00ff;
+    }
+  
+    .nav-links.active {
+      display: block;
+    }
+  }
+  
+
+    
+  
