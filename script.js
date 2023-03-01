@@ -27,3 +27,7 @@ document.addEventListener("click", (e) => {
     navLinks.classList.remove("active");
   }
 });
+
+if (window.innerWidth < 768) { // 768 is the breakpoint for small screens in Bootstrap
+  document.getElementById("screen-size-message").style.display = "block";
+}
