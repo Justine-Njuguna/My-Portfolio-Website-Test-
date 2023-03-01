@@ -249,4 +249,24 @@ a:hover::before {
     animation: morph 3.5s linear infinite;
   }
     
+  /*We're gonna add a banner button here*/
+  .banner button.download-cv-btn {
+    background-color: #812db9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 59px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #000;
+    transition: all 0.3s ease;
+  }
+  
+  .banner button.download-cv-btn:hover {
+    background-color: #3e8e41;
+    box-shadow: 0px 0px 20px #000;
+  }
+  
   
